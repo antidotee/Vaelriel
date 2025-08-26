@@ -1,0 +1,77 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a0f2e);
+  color: #ccc;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-family: 'EB Garamond', serif;
+  color: #fff;
+  font-size: 3.5rem;
+  margin-top: 60px;
+  text-shadow: 0 0 20px #7d5dfc;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: #000;
+  border: 1px solid #7d5dfc;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #7d5dfc;
+  color: #000;
+  box-shadow: 0 0 15px #7d5dfc;
+}
+
+/* Links container */
+.links {
+  margin-top: 20px;
+}
+
+/* Socials */
+.socials {
+  margin-top: 30px;
+}
+.socials a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.socials a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px #7d5dfc;
+}
+
+/* Contact */
+.contact {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #555;
+}
