@@ -4,31 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaelriel</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'UnifrakturCook', cursive;
+      color: #eee;
+      background-color: #000;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2, p, a {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #aaa;
+      text-decoration: none;
+      color: #eee;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background: #eee;
+      color: #000;
+    }
+
+    footer {
+      padding: 2rem;
+      background: #111;
+      text-align: center;
+    }
+
+    footer a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>VAELRIEL</h1>
-    <p class="tagline">Ethereal Trap · Emo Electronic · Dreamcore</p>
-    <a href="https://open.spotify.com" class="button">🎵 Listen on Spotify</a>
 
-    <div class="links">
-      <a href="https://youtube.com" class="button">🎬 YouTube</a>
-      <a href="https://soundcloud.com" class="button">🎧 SoundCloud</a>
-      <a href="https://tiktok.com" class="button">📱 TikTok</a>
-      <a href="https://bandcamp.com" class="button">🛒 Bandcamp</a>
+  <!-- Hero Section -->
+  <section style="background-image: url('assets/9.png');">
+    <div class="overlay"></div>
+    <div>
+      <img src="assets/0.png" alt="Vaelriel Logo" style="max-width: 500px; width: 80%; margin-bottom: 2rem;">
+      <a href="#about" class="button">Enter</a>
+      <a href="#music" class="button">Listen</a>
+      <a href="#support" class="button">Support</a>
     </div>
+  </section>
 
-    <div class="socials">
-      <a href="https://instagram.com">Instagram</a> |
-      <a href="https://twitter.com">Twitter/X</a> |
-      <a href="https://discord.gg">Discord</a>
+  <!-- About Section -->
+  <section id="about" style="background-image: url('assets/15.png');">
+    <div class="overlay"></div>
+    <div>
+      <h2>About</h2>
+      <p>Vaelriel is a descent into ethereal ruins — broken angels, dreamlike soundscapes, and haunting echoes. Music crafted for those who feel deeply.</p>
     </div>
+  </section>
 
-    <p class="contact">For booking, collabs, or press: <b>vaelrielmusic@gmail.com</b></p>
-    <footer>© 2025 Vaelriel — All Rights Reserved.</footer>
-  </div>
+  <!-- Music Section -->
+  <section id="music" style="background-image: url('assets/17.png');">
+    <div class="overlay"></div>
+    <div>
+      <h2>Music</h2>
+      <p>Listen to Vaelriel on your favorite platforms.</p>
+      <a href="https://vaelriel.bandcamp.com" class="button">Bandcamp</a>
+      <a href="https://open.spotify.com/user/31o7yxb5m7sbkoujhozqjyeshxue" class="button">Spotify</a>
+      <a href="https://www.youtube.com/@Eryviel" class="button">YouTube</a>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" style="background-image: url('assets/11.png');">
+    <div class="overlay"></div>
+    <div>
+      <h2>Support</h2>
+      <p>If you connect with the music, you can support here:</p>
+      <a href="https://ko-fi.com/vaelriel" class="button">Ko-fi</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-image: url('assets/19.png'); background-size: cover; background-position: center;">
+    <div class="overlay" style="background: rgba(0,0,0,0.7);"></div>
+    <p style="position: relative; z-index: 2;">Follow Vaelriel</p>
+    <a href="https://x.com/Vaelriel">X</a>
+    <a href="https://instagram.com/vaelriel">Instagram</a>
+    <a href="https://tiktok.com/@vaelriel">TikTok</a>
+    <a href="https://vaelriel.bandcamp.com">Bandcamp</a>
+  </footer>
+
 </body>
 </html>
+
